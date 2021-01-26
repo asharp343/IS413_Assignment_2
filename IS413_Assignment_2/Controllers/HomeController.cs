@@ -15,5 +15,10 @@ namespace IS413_Assignment_2.Controllers
         {
             return View();
         }
+
+        public IActionResult GradeCalculator()
+        {
+            return View();
+        }
     }
 }
