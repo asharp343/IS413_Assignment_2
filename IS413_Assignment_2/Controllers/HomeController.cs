@@ -16,7 +16,14 @@ namespace IS413_Assignment_2.Controllers
             return View();
         }
 
+        [HttpGet("GradeCalculator")]
         public IActionResult GradeCalculator()
+        {
+            return View();
+        }
+
+        [HttpPost("GradeCalculator")]
+        public IActionResult GradeCalculator(object model)
         {
             return View();
         }

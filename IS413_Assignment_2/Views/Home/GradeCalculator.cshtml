@@ -4,24 +4,29 @@
 @{
 }
 
+<head>
+    <script src="~/js/grades.js"></script>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
 <body>
 
     <h2>Grade Calculator</h2>
-    <form>
+    <form method="post">
         <label>Assignments</label>
-        <input id="assignments" />
+        <input id="assignments" name="assignments"/>
         <br /><br />
         <label>Group Projects</label>
-        <input id="groupProjects" />
+        <input id="groupProjects" name="groupProjects"/>
         <br /><br />
         <label>Quizzes</label>
-        <input id="quizzes" />
+        <input id="quizzes" name="quizzes"/>
         <br /><br />
         <label>Exams</label>
-        <input id="exams" />
+        <input id="exams" name="exams"/>
         <br /><br />
         <label>INTEX</label>
-        <input id="intex" />
+        <input id="intex" name="intex"/>
 
         <br />
         <br />
