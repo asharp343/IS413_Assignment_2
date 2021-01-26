@@ -2,36 +2,35 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Grade Calculator";
 }
 
-<head>
+@model GradeCalculatorModel
+@*@model IS413_Assignment_2.Models.GradeCalculatorModel*@
+
+
     
-</head>
+<h2>Grade Calculator</h2>
+<form method="post">
+    <label>Assignments</label>
+    <input id="assignments" asp-for="assignments"/>
+    <br /><br />
+    <label>Group Projects</label>
+    <input id="groupProjects" asp-for="groupProjects"/>
+    <br /><br />
+    <label>Quizzes</label>
+    <input id="quizzes" asp-for="quizzes"/>
+    <br /><br />
+    <label>Exams</label>
+    <input id="exams" asp-for="exams"/>
+    <br /><br />
+    <label>INTEX</label>
+    <input id="intex" asp-for="intex"/>
 
-<body>
+    <br />
+    <br />
+    <input type="submit" value="See Grade" id="submitButton" />
+    <div asp-validation-summary="All"></div>
+</form>
 
-    <h2>Grade Calculator</h2>
-    <form>
-        <label>Assignments</label>
-        <input id="assignments" />
-        <br /><br />
-        <label>Group Projects</label>
-        <input id="groupProjects" />
-        <br /><br />
-        <label>Quizzes</label>
-        <input id="quizzes" />
-        <br /><br />
-        <label>Exams</label>
-        <input id="exams" />
-        <br /><br />
-        <label>INTEX</label>
-        <input id="intex" />
-
-        <br />
-        <br />
-        <input type="submit" value="See Grade" id="submitButton" />
-
-    </form>
-
-    <script src="~/js/grades.js"></script>
-</body>
+<script src="~/js/grades.js"></script>

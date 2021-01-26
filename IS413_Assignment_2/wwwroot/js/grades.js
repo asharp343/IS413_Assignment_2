@@ -1,9 +1,11 @@
-﻿$("#submitButton").click(function () {
-    let assignments = document.getElementById("assignments").value;
-    let groupProjects = document.getElementById("groupProjects").value;
-    let quizzes = document.getElementById("quizzes").value;
-    let exams = document.getElementById("exams").value;
-    let intex = document.getElementById("intex").value;
+﻿
+
+$("#submitButton").click(function () {
+    let assignments = $("#assignments").val();
+    let groupProjects = $("#groupProjects").val();
+    let quizzes = $("#quizzes").val();
+    let exams = $("#exams").val();
+    let intex = $("#intex").val();
 
     let finalGradePercent = ((assignments * .5) + (groupProjects * .1) + (quizzes * .1) + (exams * .2) + (intex * .1));
 
