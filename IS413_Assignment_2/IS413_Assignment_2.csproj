@@ -15,5 +15,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="CustomValidation\" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,8 @@
-﻿
-
+﻿//$("#submitButton").click(function (e) {
 $("#submitButton").click(function () {
+    
+    //e.preventDefault();
+
     let assignments = $("#assignments").val();
     let groupProjects = $("#groupProjects").val();
     let quizzes = $("#quizzes").val();
@@ -49,5 +51,12 @@ $("#submitButton").click(function () {
         finalGradeLetter = "E";
     }
 
-    alert("Percent: " + finalGradePercent + "\nGrade: " + finalGradeLetter);
+    //$("#LetterGrade").html(finalGradeLetter)
+    //$("#GradePercentage").html(finalGradePercent)
+
+    if (!(assignments < 0 || assignments > 100 || groupProjects < 0 || groupProjects > 100 || quizzes < 0 || quizzes > 100 || exams < 0 || exams > 100 || intex < 0 || intex > 100) && assignments != '' && groupProjects != '' && quizzes != '' && exams != '' && intex != '')
+    {
+        alert("Grade: " + finalGradeLetter + "\nPercent: " + finalGradePercent.toString())
+
+    }
 });
