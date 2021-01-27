@@ -3,6 +3,7 @@
 *@
 @{
     ViewBag.Title = "IS413 Assignment 2";
+    
 }
 
 <!DOCTYPE html>
@@ -10,25 +11,28 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
     <link rel="icon" href="img/unnamed.jpg">
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <menu>
-            <ul>
-                <li><a asp.controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp.controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
-            </ul>
-        </menu>
+
+    <header class="header">
+        <h1 class="logo"><a asp.controller="Home" asp-action="Index">Assignment 2</a></h1>
+        <ul class="main-nav">
+            <li><a asp.controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp.controller="Home" asp-action="GradeCalculator">Grade Calculator</a></li>
+        </ul>
     </header>
+
+
+    <h1>@ViewBag.Header</h1>
 
     @RenderBody()
 
-    <footer>
-        My Footer
+    <footer class="footer">
+        Anthony Sharp - IS 413 Assignment 2 
     </footer>
-    
+
 </body>
 </html>
